@@ -1,12 +1,12 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-main',
-  templateUrl: './main.component.html',
-  styleUrls: ['./main.component.scss'],
+  selector: 'app-submitted-data',
+  templateUrl: './submitted-data.component.html',
+  styleUrls: ['./submitted-data.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class MainComponent implements OnInit {
+export class SubmittedDataComponent implements OnInit {
 
   constructor() { }
 

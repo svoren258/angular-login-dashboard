@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { SubmittedDataModule } from '../submitted-data/submitted-data.module';
+import { UserProfileModule } from '../user-profile/user-profile.module';
 import { MainComponent } from './main.component';
 
 @NgModule({
@@ -11,7 +13,9 @@ import { MainComponent } from './main.component';
       path: '',
       component: MainComponent
     }]),
-    CommonModule
+    CommonModule,
+    SubmittedDataModule,
+    UserProfileModule
   ]
 })
 export class MainModule { }

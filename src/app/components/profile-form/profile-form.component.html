@@ -1,0 +1,33 @@
+<div class="profile-form-wrapper" [formGroup]="profileForm">
+  <mat-form-field class="form-field-wrapper">
+    <mat-label>Name</mat-label>
+    <input type="text" matInput formControlName="name">
+    <mat-error *ngIf="profileForm.controls['name'].hasError('required')">
+      Name is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="form-field-wrapper">
+    <mat-label>Email</mat-label>
+    <input type="email" matInput formControlName="email">
+    <mat-error *ngIf="profileForm.controls['email'].hasError('email') && !profileForm.controls['email'].hasError('required')">
+      Please enter a valid email address
+    </mat-error>
+    <mat-error *ngIf="profileForm.controls['email'].hasError('required')">
+      Email is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="form-field-wrapper">
+    <mat-label>Phone number</mat-label>
+    <input type="number" matInput formControlName="phone_number">
+    <mat-error *ngIf="profileForm.controls['phone_number'].hasError('required')">
+      Phone number is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
+
+  <div class="action-buttons-wrapper">
+    <button mat-flat-button class="submit-button" color="primary" (click)="submitForm()">Submit</button>
+    <button mat-flat-button color="accent" (click)="resetForm()">Reset</button>
+  </div>
+</div>

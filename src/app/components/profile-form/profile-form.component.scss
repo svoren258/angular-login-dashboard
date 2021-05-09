@@ -1,0 +1,23 @@
+.profile-form-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.action-buttons-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.form-field-wrapper {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  margin-right: 20px;
+}
